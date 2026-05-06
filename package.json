@@ -1,0 +1,27 @@
+{
+  "name": "anatomianorweskiego",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "build:css": "node build.js css",
+    "build:js": "node build.js js",
+    "build:html": "node build.js html",
+    "watch": "node build.js watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "chokidar": "^4.0.3",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.3",
+    "sass": "^1.87.0",
+    "terser": "^5.39.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "Firefox ESR",
+    "Opera 12.1"
+  ]
+}
