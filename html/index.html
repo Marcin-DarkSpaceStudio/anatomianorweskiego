@@ -1057,13 +1057,83 @@
       <div class="section-content">
         <h2 class="section-h-thin centered space-2">Zamówienia</h2>
 
+        <div class="row relative space-4">
+          <div class="anatomia-order__col">
+            <div class="anatomia-order__body">
+              <div class="section-white space-2 rounded" style="padding: 1rem">
+                <h3 class="h2 size-3 space">Wersja papierowa</h3>
+                <p>
+                  Wersja papierowa jest aktualnie wyprzedana. Jeśli zaplanujemy
+                  dodruk, damy Ci o&nbsp;tym znać. Zostaw swój adres e-mail:
+                </p>
+
+                <div class="js-ml-form-wrap">
+                  <form
+                    class="form-100 js-ml-form"
+                    action="https://assets.mailerlite.com/jsonp/94785/forms/189165604364617240/subscribe"
+                    method="post"
+                    style="margin: 0"
+                  >
+                    <label for="ml-email">Adres email:</label>
+                    <input
+                      id="ml-email"
+                      type="email"
+                      value=""
+                      name="fields[email]"
+                      required
+                      autocomplete="email"
+                      autocapitalize="off"
+                      autocorrect="off"
+                    />
+                    <div class="hidden-input">
+                      <input type="hidden" name="ml-submit" value="1" />
+                      <input type="hidden" name="anticsrf" value="true" />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-blue btn-s-2 btn-spinner js-ml-submit"
+                      data-ga-category="Submit"
+                      data-ga-action="Powiadom o dodruku"
+                    >
+                      Powiadom mnie
+                      <span class="raquo"></span>
+                      <span class="ball-pulse-sync" aria-hidden="true"
+                        ><div></div>
+                        <div></div>
+                        <div></div
+                      ></span>
+                    </button>
+
+                    <span class="note"
+                      >Nie spamujemy. Twój email jest bezpieczny. W&nbsp;każdej
+                      chwili możesz zrezygnować.</span
+                    >
+                  </form>
+
+                  <p class="js-ml-form-success" hidden>
+                    Dziękujemy! Damy Ci znać, gdy ruszy dodruk.
+                  </p>
+                  <p class="js-ml-form-error" hidden>
+                    Coś poszło nie tak. Spróbuj ponownie za chwilę.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="anatomia-order__col anatomia-order__col--img">
+            <img
+              src="i/anatomia_norweskiego_okladka.jpg"
+              class="rounded"
+              alt="Anatomia norweskiego okładka"
+            />
+          </div>
+        </div>
         <div class="row relative">
           <div class="anatomia-order__col">
             <div class="anatomia-order__body">
-              <div
-                class="section-white space-2 rounded"
-                style="padding: 2rem 1rem"
-              >
+              <div class="section-white space-2 rounded" style="padding: 1rem">
+                <h3 class="h2 size-3 space">Wersja elektroniczna</h3>
                 <p>
                   <cite>Anatomia norweskiego</cite> jest dostępna jako e-book!
                 </p>
@@ -1123,8 +1193,7 @@
           <div class="anatomia-order__col anatomia-order__col--img">
             <img
               src="i/anatomia_cover_ipad.jpg"
-              style=""
-              alt="Anatomia norweskiego okładka"
+              alt="Anatomia norweskiego wersja elektroniczna"
             />
           </div>
         </div>
@@ -1179,8 +1248,10 @@
               Czy wersja papierowa będzie ponownie dostępna?
             </h3>
             <p>
-              W tej chwili nie planujemy dodruku. Jeśli zależy Ci na wersji
-              papierowej, sprawdź czy ktoś jej nie odsprzedaje na
+              Jeśli zdecydujemy się na dodruk, poinformujemy o&nbsp;tym osoby,
+              które zostawiły swój adres e-mail w&nbsp;sekcji
+              <a href="#zamowienia">Zamówienia</a>. W&nbsp;międzyczasie możesz
+              sprawdzić, czy ktoś nie odsprzedaje swojego egzemplarza na
               <a
                 href="https://www.olx.pl/oferty/q-anatomia-norweskiego/"
                 target="_blank"
@@ -1440,12 +1511,8 @@
       }
     </script>
 
-    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
     <script src="https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js"></script>
-    <script src="https://unpkg.com/scrollama@1.4.3/build/scrollama.js"></script>
 
-    <script src="https://nocnasowa.pl/c/j/j-min.js"></script>
     <script src="j-anatomia-min.js"></script>
   </body>
 </html>

@@ -5,39 +5,34 @@ Author: Marcin Retecki
 */
 
 //  Variables
-@import '../framework_master/scss/partials/variables';
-@import '../framework_master/scss/partials/mixins';
+@import "../framework_master/scss/partials/variables";
+@import "../framework_master/scss/partials/mixins";
 
 //  Reset
-@import '../framework_master/scss/partials/reset';
+@import "../framework_master/scss/partials/reset";
 
 //  Core
-@import '../framework_master/scss/partials/scaffolding';
-@import '../framework_master/scss/partials/typography';
-@import '../framework_master/scss/partials/images';
-@import '../framework_master/scss/partials/buttons';
-@import '../framework_master/scss/partials/forms';
+@import "../framework_master/scss/partials/scaffolding";
+@import "../framework_master/scss/partials/typography";
+@import "../framework_master/scss/partials/images";
+@import "../framework_master/scss/partials/buttons";
+@import "../framework_master/scss/partials/forms";
 
 //  Layout
-@import '../framework_master/scss/partials/layout';
-@import '../framework_master/scss/partials/grids';
-@import '../framework_master/scss/partials/sections';
+@import "../framework_master/scss/partials/layout";
+@import "../framework_master/scss/partials/grids";
+@import "../framework_master/scss/partials/sections";
 
-@import '../framework_master/scss/partials/navbar';
-@import '../framework_master/scss/partials/ex';
+@import "../framework_master/scss/partials/navbar";
+@import "../framework_master/scss/partials/ex";
 
 //  Utilities
-@import '../framework_master/scss/partials/utilities';
+@import "../framework_master/scss/partials/utilities";
 
-@import '../framework_master/scss/partials/shame';
+@import "../framework_master/scss/partials/shame";
 
 //  Media
-@import '../framework_master/scss/partials/media';
-
-
-
-
-
+@import "../framework_master/scss/partials/media";
 
 //
 //  Links
@@ -60,8 +55,6 @@ a:active {
   outline: 0;
 }
 
-
-
 //
 //  SVG
 //
@@ -74,7 +67,6 @@ a:active {
   touch-action: manipulation;
 }
 
-
 //
 //  Section modifier
 //
@@ -85,7 +77,6 @@ a:active {
 //
 //  Nav
 //
-
 
 /*
   musimy przekształcić normalny navbar na tablet-portrait-up
@@ -181,8 +172,6 @@ a:active {
     @include size-6;
     margin-bottom: $space-2;
   }
-
-
 }
 
 .anatomia-title__h-hide {
@@ -202,23 +191,20 @@ a:active {
 
   @include for-tablet-landscape-up {
     //@include size-3;
-
   }
 }
 
-
 .anatomia-cover-wrapper {
-  margin-left: - $space;
-  margin-right: - $space;
+  margin-left: -$space;
+  margin-right: -$space;
 
   overflow: hidden;
 
   @include for-tablet-portrait-up {
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
   }
 }
-
 
 .anatomia-h2-our-help {
   @include size-2;
@@ -227,13 +213,10 @@ a:active {
   }
 }
 
-
-
 //
 //  Anatomia to
 //
 .anatomia-main-points {
-
 }
 .anatomia-main-points__item {
   padding-left: $space;
@@ -244,7 +227,7 @@ a:active {
     padding-left: 0;
   }
 }
-.anatomia-main-points__item + .anatomia-main-points__item{
+.anatomia-main-points__item + .anatomia-main-points__item {
   margin: $space 0 0;
 }
 
@@ -266,7 +249,7 @@ a:active {
   }
 }
 .anatomia-main-points__p::before {
-  content: '';
+  content: "";
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -280,7 +263,6 @@ a:active {
     width: 2px;
   }
 }
-
 
 //
 //  Slider
@@ -379,7 +361,7 @@ a:active {
   bottom: 0;
   padding: $space;
   opacity: 0.5;
-  background-image: url('i/arrow-right.svg');
+  background-image: url("i/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 95% center;
   background-position: right $space center;
@@ -393,7 +375,7 @@ a:active {
   bottom: 0;
   padding: $space;
   opacity: 0.5;
-  background-image: url('i/arrow-left.svg');
+  background-image: url("i/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: 5% center;
   background-position: left $space center;
@@ -420,8 +402,6 @@ a:active {
 //   width: $space + $space-quarter;
 //   margin-right: $space;
 // }
-
-
 
 //
 //  Opinie
@@ -466,13 +446,10 @@ a:active {
   content: "”";
 }
 
-
 .anatomia-opinie__author {
   @include size-0;
   margin-top: $space-half;
 }
-
-
 
 //
 //  Spis treści
@@ -496,7 +473,7 @@ a:active {
 }
 .anatomia-spis-ul > li {
   margin: 0;
-  padding-left: $space-half
+  padding-left: $space-half;
 }
 .anatomia-spis-ul > li::before {
   color: $gray-on-dark;
@@ -516,21 +493,21 @@ a:active {
   padding: 0 $space;
 }
 
-
 //
 //  Zamówienia
 //
 
-.anatomia-order {}
+.anatomia-order {
+}
 
 .anatomia-order__col {
-  padding:0 $space;
+  padding: 0 $space;
   @include for-tablet-portrait-up {
     float: left;
     width: 60%;
   }
   @include for-tablet-landscape-up {
-    width: 50%;
+    width: 55%;
   }
 }
 .anatomia-order__body {
@@ -543,11 +520,9 @@ a:active {
     width: 40%;
   }
   @include for-tablet-landscape-up {
-    width: 50%;
+    width: 45%;
   }
 }
-
-
 
 .order-table {
   width: 100%;
@@ -568,7 +543,6 @@ a:active {
   text-align: left;
   font-variant-numeric: ordinal;
 }
-
 
 .order-minicart {
   margin-bottom: $space;
@@ -608,14 +582,29 @@ a:active {
   margin: 0 0 $space;
 }
 
-
 .anatomia-order__cards {
   width: $space-8;
   height: auto;
   margin: 0;
 }
 
-
 .anatomia-faq__h3 {
   margin: $space-2 0 0;
+}
+
+//
+//  Button spinner — add .btn-spinner to any button with a .raquo and
+//  .ball-pulse-sync inside; toggle .is-loading on the button to swap them.
+//
+.btn-spinner {
+  .ball-pulse-sync { display: none; }
+
+  &.is-loading {
+    cursor: wait;
+
+    .raquo { display: none; }
+    .ball-pulse-sync { display: inline-block; }
+  }
+
+  &[disabled] { opacity: 0.85; }
 }
