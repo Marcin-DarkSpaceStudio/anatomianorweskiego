@@ -15,7 +15,7 @@
     "autoprefixer": "^10.4.20",
     "chokidar": "^4.0.3",
     "html-minifier-terser": "^7.2.0",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.25",
     "sass": "^1.87.0",
     "terser": "^5.39.0"
   },
